@@ -1130,10 +1130,6 @@ video {
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -1182,14 +1178,40 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.text-red-300 {
-  --tw-text-opacity: 1;
-  color: rgb(252 165 165 / var(--tw-text-opacity));
-}
-
 .text-stone-400 {
   --tw-text-opacity: 1;
   color: rgb(168 162 158 / var(--tw-text-opacity));
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: none;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 162 158 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(12 10 9 / var(--tw-text-opacity));
+}
+
+.highlight button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
+}
+
+.highlight:hover button {
+  display: block;
 }
 
 .hover\:text-stone-300:hover {
