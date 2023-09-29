@@ -1,5 +1,5 @@
 ---
-title:  "Loop all blocks"
+title:  "Loop include files"
 date:   2023-09-29 19:58:19 +0200
 categories: FSE
 author: Marko Krstić
