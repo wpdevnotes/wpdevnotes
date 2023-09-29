@@ -12,7 +12,6 @@ categories: FSE
 Load CSS in Editor
 
 ```php
-
 <?php
 
 function enqueue_custom_editor_styles() {
@@ -24,12 +23,12 @@ function enqueue_custom_editor_styles() {
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'enqueue_custom_editor_styles' );
-
 ```
 
 Load CSS in Theme (Front End)
 
 ```php
+<?php
 
 function enqueue_custom_block_styles() {
 	wp_enqueue_style(
@@ -40,5 +39,4 @@ function enqueue_custom_block_styles() {
 	);
 }
 add_action( 'enqueue_block_assets', 'enqueue_custom_block_styles' );
-
 ```

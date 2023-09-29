@@ -6,18 +6,32 @@
         <link rel="stylesheet" href="/assets/output.css" />
     </head>
     <body class="bg-stone-900 text-stone-400 flex">
-        <nav class="bg-stone-950 min-h-[100vh] p-12 min-w-[300px] flex flex-col">
-            <a class="flex border-b border-stone-700 border-solid py-3 hover:text-stone-300" href="/">Home</a>
+        <nav
+            class="bg-stone-950 min-h-[100vh] p-12 min-w-[300px] flex flex-col"
+        >
+            <a
+                class="flex border-b border-stone-700 border-solid py-3 hover:text-stone-300"
+                href="/"
+            >
+                Home
+            </a>
             {% for post in site.posts %}
-              <a class="flex border-b border-stone-700 border-solid py-3 hover:text-stone-300" href="{{ post.url }}">{{ post.title }}</a>
+            <a
+                class="flex border-b border-stone-700 border-solid py-3 hover:text-stone-300"
+                href="{{ post.url }}"
+                >{{ post.title }}</a
+            >
             {% endfor %}
         </nav>
         <div class="p-12">
-          <main class="prose md:prose-lg prose-stone prose-invert prose-headings:text-stone-200">          
-            <h1 class="">{{ page.title }}</h1>
-            <section class="">{{ content }}</section>
-          </main>
+            <main
+                class="prose prose-l prose-stone prose-invert prose-headings:text-stone-200"
+            >
+                <h1>{{ page.title }}</h1>
+                <section>{{ content }}</section>
+            </main>
         </div>
         
+        <script src="/assets/scripts.js"></script>
     </body>
 </html>
