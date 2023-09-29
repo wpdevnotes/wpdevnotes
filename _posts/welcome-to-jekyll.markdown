@@ -17,7 +17,7 @@ Load CSS in Editor
 
 function enqueue_custom_editor_styles() {
 	wp_enqueue_style(
-		'misha-style-1',
+		'in-editor',
 		get_stylesheet_directory_uri() . '/editor.css',
 		array(),
 		filemtime( get_stylesheet_directory() . '/editor.css' )
@@ -33,7 +33,7 @@ Load CSS in Theme (Front End)
 
 function enqueue_custom_block_styles() {
 	wp_enqueue_style(
-		'misha-style-2',
+		'in-theme',
 		get_stylesheet_directory_uri() . '/editor.css',
 		array(),
 		filemtime( get_stylesheet_directory() . '/editor.css' )
