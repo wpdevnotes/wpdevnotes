@@ -2,6 +2,7 @@
 title:  "Loop all blocks"
 date:   2023-09-29 19:58:19 +0200
 categories: FSE
+author: Marko Krstić
 ---
 ## Instead of adding one by one you can loop all blocks inside build folder
 

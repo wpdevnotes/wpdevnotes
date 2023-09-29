@@ -2,6 +2,7 @@
 title:  "CSS In Gutenberg editor"
 date:   2023-09-29 19:58:19 +0200
 categories: FSE
+author: Marko Krstić
 ---
 ## CSS Needs minimum selector
 
