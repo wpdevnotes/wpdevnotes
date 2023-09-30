@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Get all the <code> elements inside <pre>
-    const codeBlocks = document.querySelectorAll("pre.highlight > code");
+    const codeBlocks = document.querySelectorAll("pre > code");
 
     codeBlocks.forEach(function (block) {
         // Create a copy button
