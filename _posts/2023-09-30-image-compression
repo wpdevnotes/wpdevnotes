@@ -5,6 +5,10 @@ categories: FSE
 author: Marko Krstić
 ---
 
+By the default WordPress used 90% image compression on JPEG images. That can give small blurred effect.
+
+To keep them clear use 100% of image quality
+
 {% highlight php %}
 <?php
 
