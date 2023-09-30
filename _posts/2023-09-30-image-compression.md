@@ -17,3 +17,5 @@ add_filter('wp_editor_set_quality', function ($arg) {
     return 100;
 });
 ```
+
+
