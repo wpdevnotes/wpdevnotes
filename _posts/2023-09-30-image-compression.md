@@ -9,11 +9,11 @@ By the default WordPress used 90% image compression on JPEG images. That can giv
 
 To keep them clear use 100% of image quality
 
-{% highlight php %}
+```php
 <?php
 
 // Disable WordPress image compression
 add_filter('wp_editor_set_quality', function ($arg) {
     return 100;
 });
-{% endhighlight %}
+```
