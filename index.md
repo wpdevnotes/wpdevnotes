@@ -5,7 +5,7 @@ layout: default
 
 <div class="">
   <img 
-    class="w-48 h-48 rounded-full object-cover"
+    class="w-56 h-56 rounded-full object-cover border border-[16px] border-stone-700 border-solid -ml-4"
     src="/assets/img/marko.jpg" 
     alt="Marko Krstic"
     >
