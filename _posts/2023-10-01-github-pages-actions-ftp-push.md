@@ -6,24 +6,24 @@ author: Marko Krstić
 ---
 
 ```yaml
-on: push
-name: 🚀 Deploy website on push
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+on: [push]
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: YOURSERVER
-        username: YOURUSERNAME
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftp
-        port: 21
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          local_path: './build/*'
+          remote_path: '/home/dplugins/webapps/dplugins-com/wp-content/plugins/dplugins-shop-blocks'
+          password: ${{ secrets.FTP_PASSWORD }}
+
 ```
 
 YOURSERVER = Example (ftp.markokrstic.com)
@@ -33,3 +33,6 @@ Navigate to the settings > Secrets
 
 Add your secrets 
 ![image](_posts/2023-10-01-github-pages-actions-ftp-push/secret.png)
+
+### Get more actions examples
+https://github.com/marketplace/actions/sftp-deploy
