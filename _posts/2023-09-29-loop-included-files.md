@@ -23,3 +23,25 @@ function load_dp_inc_files()
 
 add_action('init', 'load_dp_inc_files');
 ```
+
+
+If you need to load only php files
+```php
+<?php
+
+// Load all INC Files 
+
+function load_dp_blocks_inc_files()
+{
+    $dirPath = __DIR__ . '/inc/';
+    $files = scandir($dirPath);
+    foreach ($files as $file) {
+        $filePath = $dirPath . $file; // Removed the extra '/' since it's already in $dirPath
+        if (is_file($filePath) && pathinfo($filePath, PATHINFO_EXTENSION) === 'php') {
+            require_once($filePath);
+        }
+    }
+}
+
+add_action('init', 'load_dp_blocks_inc_files');
+```
