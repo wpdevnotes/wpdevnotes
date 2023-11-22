@@ -29,7 +29,7 @@ jobs:
 YOURSERVER = Example (ftp.markokrstic.com)
 
 Navigate to the settings > Secrets
-![image](_posts/2023-10-01-github-pages-actions-ftp-push/settings.png)
+![image](https://raw.githubusercontent.com/wpdevnotes/wpdevnotes.github.io/main/_posts/2023-10-01-github-pages-actions-ftp-push/settings.png)
 
 Add your secrets 
 ![image](https://raw.githubusercontent.com/wpdevnotes/wpdevnotes.github.io/main/_posts/2023-10-01-github-pages-actions-ftp-push/secret.png)
