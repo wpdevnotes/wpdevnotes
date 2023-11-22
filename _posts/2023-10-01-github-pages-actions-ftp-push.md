@@ -32,7 +32,8 @@ Navigate to the settings > Secrets
 ![image](_posts/2023-10-01-github-pages-actions-ftp-push/settings.png)
 
 Add your secrets 
-![image](_posts/2023-10-01-github-pages-actions-ftp-push/secret.png)
+![image](https://raw.githubusercontent.com/wpdevnotes/wpdevnotes.github.io/main/_posts/2023-10-01-github-pages-actions-ftp-push/secret.png)
 
 ### Get more actions examples
 https://github.com/marketplace/actions/sftp-deploy
+
