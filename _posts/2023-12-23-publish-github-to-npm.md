@@ -1,5 +1,5 @@
 ---
-title:  "Publish versions NPM with GitHub push"
+title:  "Publish NPM with GitHub push"
 date:   2023-09-29 19:58:19 +0200
 categories: FSE
 author: Marko Krstić
