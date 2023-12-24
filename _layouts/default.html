@@ -18,16 +18,13 @@
                 Home
             </a>
             
-            {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-
-            {% for post in sorted_posts %}
+            {% for post in site.posts %}
                 {% if page.url == post.url %}
                     <a class="flex border-b border-stone-700 border-solid py-3 text-stone-200 hover:text-stone-300 pl-2" href="{{ post.url }}">{{ post.title }}</a>
                 {% else %}
                     <a class="flex border-b border-stone-700 border-solid py-3 hover:text-stone-300" href="{{ post.url }}">{{ post.title }}</a>
                 {% endif %}
             {% endfor %}
-
 
         </nav>
 
