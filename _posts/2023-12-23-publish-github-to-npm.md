@@ -45,6 +45,8 @@ Example: v1.0.1
 2. go to the github Repository > Settings > Secrets and Variables > Actions
 3. Under Repository secrets create NPM_AUTH_TOKEN and paste it NPM account
 
+![image](https://raw.githubusercontent.com/wpdevnotes/wpdevnotes.github.io/main/_posts/2023-12-23-publish-github-to-npm/settings.png)
+
 ## esbuild.js
 
 ```js
