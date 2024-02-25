@@ -6,24 +6,27 @@ author: Marko Krstić
 ---
 
 ```yaml
-on: [push]
+name: FTP Deploy
+
+on: push
 
 jobs:
-  deploy_job:
+  deploy:
+    name: Deploy to FTP
     runs-on: ubuntu-latest
-    name: deploy
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          username: ${{ secrets.FTP_USERNAME }}
-          server: ${{ secrets.FTP_SERVER }}
-          local_path: './build/*'
-          remote_path: '/home/dplugins/webapps/dplugins-com/wp-content/plugins/dplugins-shop-blocks'
-          password: ${{ secrets.FTP_PASSWORD }}
 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: ${{ secrets.FTPSERVER }}
+        username: ${{ secrets.FTPUSER }}
+        password: ${{ secrets.FTPPASS }}
+        server-dir: serverpath/wp-content/plugins/biotech-blocks/
+        local-dir: ./
 ```
 
 YOURSERVER = Example (ftp.markokrstic.com)
