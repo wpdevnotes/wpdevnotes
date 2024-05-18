@@ -1,5 +1,5 @@
 ---
-title:  "Print Server Port in webstie footer"
+title:  "WP Scripts Custom Config"
 date:   2024-05-17 19:58:19 +0200
 categories: Scripts
 author: Marko Krstić
