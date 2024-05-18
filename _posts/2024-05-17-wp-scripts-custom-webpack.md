@@ -8,6 +8,8 @@ author: Marko Krstić
 
 Creating a custom webpack configuration file for @WordPress/Scripts
 
+Create "webpack.config.js" in the plugn root
+
 
 ```js
 // Import the original config from the @wordpress/scripts package.
