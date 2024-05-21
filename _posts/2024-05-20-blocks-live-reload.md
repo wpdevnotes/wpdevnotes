@@ -1,15 +1,19 @@
 ---
-title:  "gutenberg blocks live reload"
+title:  "Gutenberg Blocks Development - Live Reload"
 date:   2024-05-21 19:58:19 +0200
 categories: Scripts
 author: Marko Krstić
 ---
 
+As I never menaged to set up WordPress/Scripts --hot I prefer to use Browser Sync
+
 ## Install NPM
 
 After instaling NPX Create block run:
 
-```npm install browser-sync npm-run-all --save-dev```
+```
+  npm install browser-sync npm-run-all --save-dev
+```
 
 Then in the package.json update scripts section
 
