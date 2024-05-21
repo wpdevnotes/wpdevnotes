@@ -8,6 +8,7 @@ author: Marko Krstić
 ## Install NPM
 
 After instaling NPX Create block run:
+
 ```npm install browser-sync npm-run-all --save-dev```
 
 Then in the package.json update scripts section
