@@ -1,7 +1,6 @@
-
 ---
-title:  "GitHub Action to create a release"
-date:   2024-05-25 19:58:19 +0200
+title: "GitHub Action to create a release"
+date: 2024-05-25 19:58:19 +0200
 categories: GitHub
 author: Marko Krstić
 ---
@@ -42,7 +41,7 @@ jobs:
         run: |
           if [ -f package.json ]; then
             npm run build
-          fi             
+          fi
 
       - name: "Copy files to distribution directory excluding .distignore entries"
         run: |

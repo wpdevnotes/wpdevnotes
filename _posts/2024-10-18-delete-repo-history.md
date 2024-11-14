@@ -1,7 +1,7 @@
 ---
 title: "Delete github repository history"
 date: 2024-10-18 19:58:19 +0200
-categories: github
+categories: GitHub
 author: Marko Krstić
 ---
 
